@@ -1,0 +1,8 @@
+.arialUpper {
+  font-family:"Arial",Arial,serif;
+  text-transform: uppercase;
+}
+
+#broccoli {
+  border: 1px black solid;
+}
