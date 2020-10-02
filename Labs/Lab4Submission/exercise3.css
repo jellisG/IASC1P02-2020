@@ -1,0 +1,25 @@
+.green {
+  background-color: forestgreen;
+  margin: 0px -5px 0px -5px;
+}
+
+.dots {
+  border: black 3px dotted;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#red, #darkgreen {
+  margin-left:10px;
+}
+
+#red {
+  color: red;
+}
+#darkgreen {
+  color: green;
+}
+
+.purple {
+  color:purple;
+}

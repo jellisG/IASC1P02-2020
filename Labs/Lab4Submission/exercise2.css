@@ -1,0 +1,35 @@
+.box {
+  border: purple 3px dotted;
+}
+
+.text {
+  text-align: center;
+  margin-top: 15%;
+  margin-bottom: 25px;
+}
+
+.green {
+  text-align: center;
+  color: green;
+  font-size: 11px;
+}
+
+.orange {
+  color: orange;
+  font-size: 35px;
+}
+
+#upRed {
+  color: red;
+  vertical-align: super;
+}
+
+.purple {
+  text-align: right;
+  color:purple;
+  font-size: 9px;
+}
+
+#yellow {
+  color: yellow;
+}
