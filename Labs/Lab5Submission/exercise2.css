@@ -1,0 +1,50 @@
+body {
+  background-color: green;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#wrapper {
+  background-color: grey;
+  width: 1000px;
+  margin:0 auto;
+}
+
+#header {
+  background-color: red;
+  text-align: center;
+  height: 100px;
+}
+
+#header h1 { margin:0; }
+
+#leftNav {
+  float:left;
+  background-color: #ffff99;
+  width:30%;
+  height: 80px;
+}
+
+#rightNav {
+  float:left;
+  background-color: #ff9933;
+  width:70%;
+  height: 80px;
+}
+
+#content {
+  float:left;
+  background-color: blue;
+  height: 700px;
+  width: 100%;
+}
+
+#content h2 { margin:0; }
+
+#footer {
+  clear:both;
+  background-color: yellow;
+  height: 100px;
+  width: 100%;
+  margin:0;
+}

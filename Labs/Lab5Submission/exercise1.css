@@ -1,0 +1,31 @@
+body {
+  color:white;
+  background-color: white;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#wrapper {
+  background-color: grey;
+}
+
+#header {
+  height: 90px;
+  text-align: center;
+  background-color: red;
+  padding: 5px;
+}
+
+#leftSide {
+  float:left;
+  height: 500px;
+  background-color: green;
+  width: 100%;
+}
+
+#footer {
+  clear:both;
+  padding-top: 3px;
+  height: 100px;
+  background-color: blue;
+}
