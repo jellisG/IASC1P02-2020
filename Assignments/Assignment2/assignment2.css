@@ -1,0 +1,63 @@
+html {
+  background-color: #42475c;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* The brighter background represents the content within the "Box" model.
+   Everything else inside the wrapper class, is the content, which is why it is colored differented */
+.wrapper {
+  background-color: #515770;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: black 2px solid;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* Nesting */
+.title, .big { font-size: 40px; }
+
+a {
+  font-weight: bold;
+  color: aquamarine;
+  text-decoration: none;
+}
+
+.font { font-family: Courier New, monospace, sans-serif; }
+.smaller { font-size: 12px; }
+.capital { text-transform: uppercase }
+
+/* Grouping */
+.header, .pictures {
+  text-align: center;
+}
+
+/* Nesting - since there are 2 images, it refers to both of them */
+.pictures img {
+  display:inline-block;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 20px;
+  max-height: 300px;
+}
+
+.absolute {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+}
+
+.relative {
+  position: relative;
+  left: 300px;
+}
+
+.fixed {
+  position: fixed;
+  top: 300px;
+  left: 20px;
+}
+
+.yellow { color: yellow; }
+.lime { color: lime; }
