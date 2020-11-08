@@ -1,0 +1,140 @@
+body {
+    background-color: #646464;
+    color: white;
+    margin:0;
+}
+p, ul, h2 {
+    margin: 0;
+}
+
+/* ---------------- Wrapper ---------------- */
+.wrapper {
+    margin: 0 auto;
+}
+/* ---------------- /Wrapper---------------- */
+/* ---------------- Header ---------------- */
+.header {
+    background-color: #343434;
+    padding: 20px 10px;
+    display: flex;
+    border-bottom: 2px solid orange;
+}
+.logo {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: auto;
+}
+.header-links li {
+    display: inline-block;
+    font-size: 20px;
+    padding-top: 6px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+.buttons {
+    margin-left: auto;
+    padding: 5px;
+}
+.search-bar {
+    margin-top: 5px;
+    height: 20px;
+}
+
+/* ---------------- /Header ---------------- */
+/* ---------------- Center ---------------- */
+.center {
+    width: 100%;
+    padding: 5px 0 5px 0;
+    display: flex;
+    justify-content: center;
+}
+.nav-bar {
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #454545;
+    width: 20%;
+    border: 1px solid orange;
+}
+.tags {
+    padding: 0;
+}
+.tags li {
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.main-content {
+    background-color: #454545;
+    width: 45%;
+    padding: 10px;
+    border: 1px solid orange;
+}
+.posts {
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 10px 10px 30px 10px;
+}
+.post-content {
+    font-size: 16px;
+}
+
+.nav-page {
+    display: flex;
+    float: right;
+}
+.nav-page :first-child {
+    padding-right: 15px;
+}
+
+
+/* ---------------- /Center ---------------- */
+/* ---------------- Footer ---------------- */
+.footer {
+    display: flex;
+    padding: 20px;
+    background-color: #343434;
+    border-top: 2px solid orange;
+    justify-content: center;
+}
+.container {
+    width: 25%;
+}
+
+.footer-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+.footer-list {
+    padding-left: 0;
+}
+.footer-list li {
+    list-style: none;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.disclaimer {
+    font-size: 18px;
+    padding: 4px 0 4px 0;
+}
+
+/* ---------------- /Footer ---------------- */
+
+/* -------- Other Changes -------- */
+.class-title, .main-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    padding-bottom: 22px;
+}
+.orange {
+    color: orange;
+}
