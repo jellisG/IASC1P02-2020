@@ -137,6 +137,6 @@ p, ul, h2 {
     color: orange;
 }
 li:hover {
-    transition: 400ms;
-    background-color:#d68445;
+    width: auto;height:auto;background-color:#d68445;
+    transition: 500ms;
 }
