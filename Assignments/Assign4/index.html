@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Home</title>
+        <link href="theme.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+
+    <body>
+
+        <div class="wrapper">
+            <!-- Navigation Bar -->
+            <div class="nav-bar">
+                <ul class="nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="inputs.html">INPUTS</a></li>
+                    <li><a href="results.html">POSTS</a></li>
+                    <li><a href="reference.html">REFERENCES</a></li>
+                    <li class="dropdown"><span>OTHER WORKS</span>
+                        <div class="dropdown-content">
+                            <a href="https://jellisg.github.io/IASC1P02-2020/Assignments/Assignment1/assignment1.html">Assignment 1</a>
+                            <a href="https://jellisg.github.io/IASC1P02-2020/Assignments/Assignment2/assignment2.html">Assignment 2</a>
+                            <a href="https://jellisg.github.io/IASC1P02-2020/Assignments/Assignment3/index.html">Assignment 3</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Content Area -->
+            <div class="content">
+                <div class="content-container center">
+                    <h1 class="content-title">Special Quote</h1>
+                        <h2><span id="theQuote">This is boring, please change this quote. - Stranger</span></h2>
+                    <button class="button" onclick="displayQuote()">New Quote!</button>
+                    <p id="quoteTime"></p>
+                </div>
+
+                <div class="content-container">
+                    <h1 class="content-title center">Special Quote Code Analysis</h1>
+                    <p>
+                        It's quite simple actually. While I currently don’t know of a way to grab text information from other websites, it is 
+                        possible to supply myself with my own. There are several websites on the internet that let me copy paste famous quotes 
+                        along with the original authors themselves. In code form, this involved making a variable which included an array of 
+                        strings, containing a desired number of quotations that I grabbed from a quote generator online. The exact website I 
+                        used was from this specific website <span class="keyword"><a href="https://miniwebtool.com/random-quote-generator/">here</a></span>. 
+                        I looked for short one’s in particular since I didn’t want the website to look particularly cluttered. After grabbing all the quotations 
+                        I wanted, I made a function which generates a random number based off the number of quotations in the array, which effectively 
+                        allows me to grab a quote from a range without getting an error. With a press of a button, I can get a new random number 
+                        and it will generate a new quote from the array each time the button is clicked on. It essentially looks for a given 
+                        element in the HTML code and will insert a snippet of HTML in there through a JavaScript method. It will replace each 
+                        time, which is the intention of generating a new quote. 
+                    </p>
+                </div>
+
+                <div class="content-container center">
+                    <h1 class="content-title center">Changing Pictures</h1>
+                    <div class="content-images">
+                        <img id="img1" src="https://picsum.photos/2000/3000/?image=" alt="stockimage"/>
+                        <img id="img2" src="https://picsum.photos/1000/2000/?image=" alt="stockimage"/>
+                        <img id="img3" src="https://picsum.photos/1000/2500/?image=" alt="stockimage"/>
+                        <img id="img4" src="https://picsum.photos/1000/1500/?image=" alt="stockimage"/>
+                    </div>
+                    <button class="button" id="clicker" onclick="showTime('pictureTime')">New Pictures!</button>
+                    <p id="pictureTime"></p>
+                    <p>
+                        Some Lorem Picsum pictures get deleted/removed throughout the years, so some random pictures
+                        might end up blank and unviewable. However keep getting new pictures and you'll get four perfect pictures. 
+                    </p>
+                </div>
+
+                <div class="content-container">
+                    <h1 class="content-title center">Changing Picture Code Analysis</h1>
+                    <p>
+                        This is a complex function. There is a website referred to as <span class="keyword"><a href="https://picsum.photos/">Lorem Picsum</a></span>, 
+                        which contains a vast variety of images. This nifty website can obtain images in whatever desired resolutions you’d like, 
+                        along with other decisions such as having grayscale images or blurred images. The special feature about this website is that 
+                        it can be solely dependent on the properties of the URL. By inspection, there are numbers which will represent the resolution 
+                        of the image as well as an ID. The ID of the image ranges from a certain number, so I have created yet another random number 
+                        function. The difference compared to the previous function above is that when the button is pressed, it loads a new image directly 
+                        from the website. The page does not reload either. By having a random number, we can grab the main segment of the Lorem Picsum website 
+                        URL and insert our random number to represent our ID. With a different ID, means we will have a different picture, effectively giving 
+                        us different pictures every time the button is clicked. By implementing the random number function, we therefore have randomly changing 
+                        images. 
+                    </p>
+                </div>
+
+                <div class="content-container center">
+                    <h1 class="content-title">Information About Other Pages</h1>
+                    <button class="button" onclick="show('toggle1', 0)">Home</button>
+                    <p id="toggle1"></p>
+                    <button class="button" onclick="show('toggle2', 1)">Page 1</button>
+                    <p id="toggle2"></p>
+                    <button class="button" onclick="show('toggle3', 2)">Page 2</button>
+                    <p id="toggle3"></p>
+                    <button class="button" onclick="show('toggle4', 3)">References</button>
+                    <p id="toggle4"></p>
+                </div>
+            </div>
+            
+            <!-- Footer -->
+            <div class="footer">
+                <h2 class="footer-title">Disclaimer</h2>
+                <p class="disclaimer">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque efficitur
+                    massa ac nulla maximus maximus. Fusce semper tincidunt diam in congue.
+                    Phasellus nibh ex, maximus ac diam a, dignissim ultrices nunc. Fusce tincidunt
+                    felis lorem, et aliquam orci molestie eu. Fusce pharetra tempor leo. Orci
+                    varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                    mus. Etiam eleifend velit sit amet nibh congue, vel porttitor nisl aliquam.
+                    Aenean vel ipsum pharetra orci lacinia bibendum.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

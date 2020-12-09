@@ -1,0 +1,176 @@
+/* ---------- Every other element ---------- */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-image: url("images/leaves.png");
+    color: #c9c9c9;
+    background-color: #2e3236;
+    margin:0;             /* Makes the left and right margins touch ends*/
+}
+p, .content li { font-size: 16px; }
+
+/* ---------- Wrapper ---------- */
+.wrapper {
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* ---------- Navigation Bar Elements ---------- */
+.nav-bar {
+    background-color: #262626;
+    border-bottom: 3px solid #a85100;
+}
+.nav-bar a {  
+    color: #c9c9c9;     /* Makes the text of URL's this color */ 
+    text-decoration: none;
+}
+.nav-bar ul { 
+    margin: 0;
+    padding: 0;
+}
+.nav-links li {
+    display: inline-block;
+    padding:16px;
+    font-size: 22px;
+    text-decoration: none;
+}
+.nav-links li:hover {
+    width: auto;
+    height:auto;
+    background-color: #d6361a;
+    transition: 500ms;
+}
+
+/* ---------- Content Area Elements ---------- */
+.content {
+    width: 75%;
+    margin: 0 auto;
+}
+.content-container { /* The box containing the content information */
+    background-color: #262626;
+    border-left: 3px solid #ba480b;
+    border-right: 3px solid #ba480b;
+    padding: 5px 20px 5px 20px;
+    margin: 10px 0px 10px 0px;
+}
+.content-title {
+    text-decoration: underline;
+}
+.content #theQuote, .allMessages #userName, #show-cal-output { /* Properties of the Famous Quote itself */
+    margin-bottom: 0px;
+    font-size: 20px;
+    color: #e37500;
+}
+.content img {
+    width:250px;
+    height:350px;
+    border: 2px solid  #ba480b;
+    margin: 0px 10px 0px 10px
+}
+
+.content input[type=text], .content textarea {
+    width: 100%;
+    font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 12px 12px;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 3px solid #555;
+    transition: 0.5s;
+}
+.content textarea { resize: none; }
+.content input[type=text]:focus, .content textarea:focus {
+    border: 3px solid #ba480b;
+}
+.content .allMessages {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* ----------- Calculator Elements ------------ */
+.calculator-container {
+    text-align: center;
+}
+.cal-buttons  {
+    display: inline-block;
+}
+.calculator-container input[type=text] {
+    width: 150px;
+}
+.calculator-container input[type=button] {
+    border: 2px solid #853308;
+    background-color: #ba480b;
+    color: #c9c9c9;
+    font-size: 20px;
+    width: 70px;
+    height: 70px;
+}
+.cal-outputs {
+    text-align: center;
+}
+
+/* ---------- Footer Elements ---------- */
+.footer {
+    background-color: #262626;
+    border-top: 3px solid #ba480b;
+    text-align: center;
+}
+.footer .footer-title {
+    margin:10px;
+}
+.footer .disclaimer { 
+    padding: 10px 10% 10px 10%;
+    margin: 0;
+}
+
+
+
+/* ---------- Extra ---------- */
+.center {
+    text-align: center;
+    justify-content: center;
+}
+.button {
+    background-color: #ba480b;
+    border: none;
+    color: #c9c9c9;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px;
+}
+.button:hover {
+    background-color:#853308;
+    cursor: pointer;
+}
+.button-del {
+    background-color: #ba480b;
+    border: none;
+    color: #c9c9c9;
+    padding: 8px 16px;
+    font-size: 14px;
+    margin: 5px;
+}
+.keyword a {
+    color: #e37500;
+    text-decoration: underline;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown a {
+    font-size: 20px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #262626;
+    min-width: 100px;
+    padding: 12px 16px;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+  }

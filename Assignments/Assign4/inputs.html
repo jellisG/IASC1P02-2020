@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Inputs</title>
+        <link href="theme.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+
+    <body>
+
+        <div class="wrapper">
+            <!-- Navigation Bar -->
+            <div class="nav-bar">
+                <ul class="nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="inputs.html">INPUTS</a></li>
+                    <li><a href="results.html">POSTS</a></li>
+                    <li><a href="reference.html">REFERENCES</a></li>
+                    <li class="dropdown"><span>OTHER WORKS</span>
+                        <div class="dropdown-content">
+                            <a href="https://jellisg.github.io/IASC1P02-2020/Assignments/Assignment1/assignment1.html">Assignment 1</a>
+                            <a href="https://jellisg.github.io/IASC1P02-2020/Assignments/Assignment2/assignment2.html">Assignment 2</a>
+                            <a href="https://jellisg.github.io/IASC1P02-2020/Assignments/Assignment3/index.html">Assignment 3</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+
+            <!-- Content Area -->
+
+            <div class="content">
+                <div class="content-container">
+                    <h1 class="content-title center">Post to a Forum</h1>
+                    <label for="name">Enter any Name</label>
+                    <input type="text" id="name" name="name"/>
+                    <label for="message">Enter any Message</label>
+                    <textarea id="message" rows="4" cols="50"></textarea>
+                    <button class="button" type="button" onclick="sendMessage()">Send Message</button>
+                </div>
+
+                <div class="content-container">
+                    <h1 class="content-title center">Basic Calculator</h1>
+                    <div class="calculator-container">
+                        <h2 id="show-cal-output"></h2>
+                        <input type="text" id="enter1" name="enter1" />
+                        <input type="text" id="enter2" name="enter2" /> <br/>
+                        <div class="cal-buttons">
+                            <input type="button" onclick="calculate('+')" value="+"/>
+                            <input type="button" onclick="calculate('-')" value="-"/>
+                            <input type="button" onclick="calculate('*')" value="*"/>
+                            <input type="button" onclick="calculate('/')" value="/"/>
+                            <input type="button" onclick="calculate('%')" value="%"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-container">
+                    <h1 class="content-title center">Basic Calculator Notes</h1>
+                    <p>
+                        Practiced the same procedures in a previous lab exercise. The buttons obviously have
+                        styles which are similar to the rest of the other buttons throughout the website. Making
+                        the traditional calculator would be difficult (and time management) as you would constantly
+                        need to consider scenarios of pressing the same operator, "C" function, Square Root, Pi, et cetera.
+                        Plagiarism is no good either, so I made my own quick version using function calls. It is a single
+                        function which goes through a switch statement rather than going through different function calls.
+                        The parameters for the function call is the operator which makes determining which arithmetic operation
+                        to do a lot easier. I would have liked to make a modern calculator without user keyboard input, but 
+                        unfortunately that's for another day. 
+                    </p>
+                </div>
+
+                <div class="content-container">
+                    <h1 class="content-title center">"Colorful" Properties</h1>
+                    <div class="cal-outputs">
+                        <button class="button" type="button" onclick="defaultBG()">Default Background</button>  
+                        <button class="button" type="button" onclick="changeBG()">New Background!</button>    
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <h2 class="footer-title">Disclaimer</h2>
+                <p class="disclaimer">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque efficitur
+                    massa ac nulla maximus maximus. Fusce semper tincidunt diam in congue.
+                    Phasellus nibh ex, maximus ac diam a, dignissim ultrices nunc. Fusce tincidunt
+                    felis lorem, et aliquam orci molestie eu. Fusce pharetra tempor leo. Orci
+                    varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                    mus. Etiam eleifend velit sit amet nibh congue, vel porttitor nisl aliquam.
+                    Aenean vel ipsum pharetra orci lacinia bibendum.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
